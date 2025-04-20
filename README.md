@@ -1,17 +1,13 @@
-Реализован собственный фреймворк без Express и других библиотек.
-
- Структура
-- framework/Application.js — сервер, middleware, маршрутизация
-- framework/Router.js — маршруты: get, post, put, patch, delete
-- index.js — запуск сервера и тестовый роут
-
- Возможности
-- app.use() — middleware
-- app.addRouter() — подключение роутов
-- app.listen(PORT) — запуск сервера
-- Поддержка req.body, req.query
-- Методы res.send(), res.json(), res.status()
-
- Запуск
+Запуск:
 npm install
 npm start
+
+
+Описание
+- server.js — точка входа, подключение роутов и middleware
+- db.json — база данных (две сущности: philosophers, concepts)
+- db.js — функции чтения и записи в JSON
+- routes/ — маршруты API
+- controllers/ — обработка HTTP-запросов
+- services/ — бизнес-логика
+- middlewares/ — обработка ошибок
